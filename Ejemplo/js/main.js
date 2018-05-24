@@ -141,7 +141,7 @@ function cargaDatosSuccess(tx, results){
 
 /*Eliminando*/
 function eliminarForm(tx) {
-    tx.executeSql('DELETE FROM agenda_curso WHERE id='+$.id);
+    tx.executeSql('DELETE FROM agenda_curso WHERE id='+$.id, [], errorDB);
 }
 
 
