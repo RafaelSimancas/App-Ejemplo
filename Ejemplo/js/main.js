@@ -53,7 +53,7 @@ function onDeviceReady(){
 		if($.id != -1){
 			eliminarForm();
 		}
-		);}
+		});
 }
 
 
