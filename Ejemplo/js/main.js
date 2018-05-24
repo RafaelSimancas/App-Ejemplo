@@ -51,7 +51,10 @@ function onDeviceReady(){
 	 });
 }
 
-
+	$("#b_guardar").click(function(e){
+		if($.id != -1){
+			eliminarForm();
+		}
 /* 
 * creación de ña base de datos
 */
@@ -130,7 +133,10 @@ function cargaDatosSuccess(tx, results){
 	});
 }
 
-
+/*Eliminando*/
+function eliminarForm(tx) {
+    tx.executeSql('DELETE * FROM agenda_curso WHERE id='+$.id, errorDB);
+}
 
 
 /*
