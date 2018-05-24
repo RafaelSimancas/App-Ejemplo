@@ -49,12 +49,14 @@ function onDeviceReady(){
 			saveNewForm();
 		 }
 	 });
-}
-
-	$("#b_eliminar").click(function(e){
+              $("#b_eliminar").click(function(e){
 		if($.id != -1){
 			eliminarForm();
 		}
+		);}
+}
+
+
 /* 
 * creación de ña base de datos
 */
