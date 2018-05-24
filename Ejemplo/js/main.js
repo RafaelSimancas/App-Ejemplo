@@ -51,7 +51,7 @@ function onDeviceReady(){
 	 });
 }
 
-	$("#b_guardar").click(function(e){
+	$("#b_eliminar").click(function(e){
 		if($.id != -1){
 			eliminarForm();
 		}
@@ -135,7 +135,7 @@ function cargaDatosSuccess(tx, results){
 
 /*Eliminando*/
 function eliminarForm(tx) {
-    tx.executeSql('DELETE * FROM agenda_curso WHERE id='+$.id, errorDB);
+    tx.executeSql('DELETE * FROM agenda_curso WHERE id='+$.id);
 }
 
 
