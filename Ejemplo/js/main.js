@@ -50,8 +50,13 @@ function onDeviceReady(){
 		 }
 	 });
               $("#b_eliminar").click(function(e){
+		      else{
+			alert("haciendo el trabajo");
+		}
 		if($.id != -1){
 			eliminarForm();
+		}else{
+			alert("no hay registors por eliminar");
 		}
 		});
 }
