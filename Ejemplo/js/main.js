@@ -146,7 +146,7 @@ function eliminarForm(tx) {
 	/*var sql = "DELETE * FROM agenda_curso WHERE id=" +$.id;
 	tx.executeSql(sql);*/
      tx.executeSql("DELETE FROM agenda_curso WHERE id='1'");
-               location.reload();
+	alert("ya se armo");
 		$.mobile.changePage("#home");
 }
 
