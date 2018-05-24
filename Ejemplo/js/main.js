@@ -143,11 +143,11 @@ function procesando(){
 }
 /*Eliminando*/
 function eliminarForm(tx) {
-	alert("haciendo el trabajo id =" +$.id);
+	alert("haciendo el trabajo id =$id");
 	/*var sql = "DELETE * FROM agenda_curso WHERE id=" +$.id;
 	tx.executeSql(sql);*/
-     //tx.executeSql('DELETE FROM agenda_curso WHERE id='+$.id);
-	tx.executeSql('DROP TABLE IF EXISTS agenda_curso');
+     tx.executeSql('DELETE FROM agenda_curso WHERE id=$id');
+
 		$.mobile.changePage("#home");
 }
 
