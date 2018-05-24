@@ -51,7 +51,7 @@ function onDeviceReady(){
 	 });
               $("#b_eliminar").click(function(e){
 			alert("haciendo el trabajo");
-		if($.id != -1){
+		if($.id >= 0){
 			alert("haciendo el trabajo x2");
 			eliminarForm();
 		}else{
