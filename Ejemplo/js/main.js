@@ -49,15 +49,7 @@ function onDeviceReady(){
 			saveNewForm();
 		 }
 	 });
-              $("#b_eliminar").click(function(e){
-			alert("haciendo el trabajo");
-		if($.id >= 0){
-			alert("haciendo el trabajo x2");
-			eliminarForm();
-		}else{
-			alert("no hay registors por eliminar");
-		}
-		});
+
 }
 
 
@@ -138,7 +130,17 @@ function cargaDatosSuccess(tx, results){
 		$.id = $(this).data("uid");
 	});
 }
-
+function procesando(){
+              $("#b_eliminar").click(function(e){
+			alert("haciendo el trabajo");
+		if($.id >= 0){
+			alert("haciendo el trabajo x2");
+			eliminarForm();
+		}else{
+			alert("no hay registors por eliminar");
+		}
+		});
+}
 /*Eliminando*/
 function eliminarForm(tx) {
 	alert("haciendo el trabajo id =" +$.id);
