@@ -52,6 +52,7 @@ function onDeviceReady(){
               $("#b_eliminar").click(function(e){
 			alert("haciendo el trabajo");
 		if($.id != -1){
+			alert("haciendo el trabajo x2");
 			eliminarForm();
 		}else{
 			alert("no hay registors por eliminar");
@@ -140,7 +141,7 @@ function cargaDatosSuccess(tx, results){
 
 /*Eliminando*/
 function eliminarForm(tx) {
-    tx.executeSql('DELETE * FROM agenda_curso WHERE id='+$.id);
+    tx.executeSql('DELETE FROM agenda_curso WHERE id='+$.id);
 }
 
 
